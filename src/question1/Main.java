@@ -1,7 +1,9 @@
 package question1;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 
 
@@ -38,8 +40,13 @@ public class Main {
 				System.out.println(x);
 			}
 			br.close();
-		}catch(Exception e){}
-		
+			
+		}catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
+	
 	}
 	
 }
