@@ -8,7 +8,7 @@ enum MySingleton {
 }
 
 public class Singleton implements Cloneable, Serializable {
-	private static final long serialVersionUID = -6834926027969920657L;
+	private static final long serialVersionUID = 235249920657L;
 	private volatile static Singleton singleton = null; // Lazy Initialization
 
 	private Singleton() {
